@@ -60,7 +60,7 @@ export class HomePage {
 
   }
 
-  openFavorites(event,fab:FabContainer){
+  openFavorites(fab:FabContainer){
     fab.close();
     this.storage.get('favourites').then(val => {
       this.genre.name = "Favourites";
