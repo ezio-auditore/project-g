@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, LoadingController } from 'ionic-angular';
+import { NavController, NavParams, LoadingController ,FabContainer} from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
 import { Storage } from '@ionic/storage';
 @Component({
@@ -60,7 +60,8 @@ export class HomePage {
 
   }
 
-  openFavorites(){
+  openFavorites(event,fab:FabContainer){
+    fab.close();
     this.storage.get('favourites').then(val => {
       this.genre.name = "Favourites";
       if(val.length !=0){

@@ -10,17 +10,7 @@ ion-header{
 }
 
 
-.fabButton{
-       position: unset;
-}
-ion-fab-list[side="left"] .fab-in-list, ion-fab-list[side="right"] .fab-in-list {
-    margin: 0 8px;
-    position: relative;
-    bottom: 28%;
-    top: 0px;
-    margin-top: 402px;
 
-}
 
 .card-background-page{
   ion-card{
@@ -65,7 +55,7 @@ ion-fab-list[side="left"] .fab-in-list, ion-fab-list[side="right"] .fab-in-list 
     color :#fff;
     padding: 15px;
   }
-  button{
+  .fav-button{
     position: absolute;
     z-index: 5;
     bottom: 10%;
