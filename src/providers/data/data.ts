@@ -10,7 +10,7 @@ export class DataProvider {
   }
   // https://api-2445582011268.apicast.io/games/
   limit: number = 30;
-  games_api_url = '/games/';
+  games_api_url = 'https://api-2445582011268.apicast.io/games/';
   cors_url="https://cors.io"
   api_key = 'e61f7617a717227258282a6a985c3f05';
   headers = new Headers({ 'user-key': 'e61f7617a717227258282a6a985c3f05' ,'Access-Control-Allow-Origin' :'*'} );
