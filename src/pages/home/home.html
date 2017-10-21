@@ -20,6 +20,14 @@
 </ion-header>
 
 <ion-content class="card-background-page">
+ <ion-fab top right style="position :unset" >
+      <button ion-fab ><ion-icon name="add"></ion-icon></button>
+      <ion-fab-list side="left" >
+        <button ion-fab><ion-icon name="add" ></ion-icon></button>
+        <button ion-fab><ion-icon name="add" ></ion-icon></button>
+        <button ion-fab><ion-icon name="add" ></ion-icon></button>
+      </ion-fab-list>
+    </ion-fab>
   <div *ngIf="games">
     <ion-card *ngFor="let game of games">
       <div *ngIf="game.screenshots; then gamescreen else noscreen"></div>
